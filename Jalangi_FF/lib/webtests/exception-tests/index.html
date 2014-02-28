@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en" id="type-article-structured" class="template-article">
+	<head>
+		<title>Test for JIT-compiler Friendly Code Checker</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+		function foo() { throw "error"; }
+		
+		try {
+		  foo();
+		} catch (e) {
+		  console.log("caught");
+		}
+
+		</script>
+		<p>
+			The webpage embeds some JIT-compiler unfriendly code and some code that follows the rule specified in <a href="http://www.html5rocks.com/en/tutorials/speed/v8/">http://www.html5rocks.com/en/tutorials/speed/v8/</a>.
+			When you see this message, those code snipped has been executed. Please open the web console, type <b>J$.typeInfo();</b> to see if those inefficient code patterns have been detected.
+		<p>
+	</body>
+</html>
+

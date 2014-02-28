@@ -1,0 +1,6 @@
+tasks:
+1. use set for storing polymorphic statements, use the field of an object.
+2. add a count to prioritize all warnings
+	for polymorphic statements, first choose the two most frequent used signatures, and use the count of the less frequent one as the weight.
+3. modify the checker for numeric/non-numeric type thing
+4. add new abstractions (DSL) to facilitate easy analysis development

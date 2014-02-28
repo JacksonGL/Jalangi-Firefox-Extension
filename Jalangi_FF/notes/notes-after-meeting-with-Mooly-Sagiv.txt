@@ -1,0 +1,9 @@
+notes after visiting:
+mooly sagiv
+
+1. mooly is interested in implementing a sandbox, prohibiting modifying some data structure
+2. mooly also cares about performance, answer you can selectively instrument some files or some parts of a file, or selectively instrument some specific operations, such as binary operation, unary operation, variable read, variable write.
+3. doing program analysis framework at a high level probably makes it difficult to find some kind of bugs, some kind of bugs are more easily to check at bit code level, in there, everything is more static and deterministic and probably static analysis tool is good enough to spot many bugs.
+
+mooly's advice:
+do not think about your future, just do what you like, and do what you good at.

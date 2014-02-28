@@ -1,0 +1,189 @@
+
+
+evaluation,
+
+show writing rules easily
+what kind of rules and checking useful
+see false positives.
+
+
+likely type
+object allocation tracker
+nan
+
+4-5 critical change behavior 
+benign bugs is also ok
+
+
+implicit type conversion
+
+understand clever trick use of the javascript
+
+
+if i can use the likely type to infer bugs finding
+
+give insight to the potential
+design of the checker
+writing checkers easily
+found bugs are real-world
+
+
+==================================================
+switch to mac os
+
+setup firefox extension environment
+
+use webstorm (Koushik has given the license)
+
+read the DBB paper
+
+
+==================================================
+
+what else should be done to publish the jalangi paper? siriam
+
+is there any application for the randomized delta debugging algorithm.
+
+
+try to create your own file rather than copy and paste, so that it will have license issues.
+berkeley uses bdd license
+
+
+==================================================
+
+next step plan:
+experimental infrastructure
+search jquery bug tracker to see more NaN bugs and trie to find them:
+
+implement the memoize function suggestion.
+apply likely type checker
+object allocation tracker
+
+JIT friendly code checker
+memory leak tracker
+
+
+===============================
+
+
+www.facebook.com
+[NaN iid: 22837] [object Object].methodInvocationTime:NaN 	4 times periodically
+[NaN iid: 22837] [object Object].methodInvocationTime:NaN 
+[NaN iid: 1881] [object Object].refcount:NaN
+[NaN iid: 45753] [object Object]._gripperHeight:NaN
+
+youtube.com
+
+[NaN iid: 35097] [object Object].wheelDeltaX:NaN"
+[NaN iid: 35117] [object Object].wheelDeltaY:NaN"
+
+sina.com.cn
+"[NaN iid: 26873] [object Object].sinaads_ad_width:NaN" analysis.js:2191
+18:33:47.755 "[NaN iid: 26913] [object Object].sinaads_ad_height:NaN"
+
+www.163.com
+"[NaN iid: 1045] [object Object]._curIndex:NaN"
+
+vk.com
+"[NaN iid: 12389] [object HTMLDocument].undefined:NaN"
+
+www.msn.com
+"[NaN iid: 1101] [object Object].minorVer:NaN"
+
+www.craigslist.org
+"[NaN iid: 16725] [object Object]._tileLayersToLoad:NaN"
+
+bugs found in dojo demo:
+
+http://demos.dojotoolkit.org/demos/shippingRoutes/demo.html
+"[NaN iid: 60045] rgba(255, 165, 0, 1).a:NaN"
+
+http://demos.dojotoolkit.org/demos/mobileGeoCharting/demo.html
+"[NaN iid: 60045] rgba(255, 255, 255, 1).a:NaN" analysis.js:2191
+19:47:59.732 "[NaN iid: 60045] rgba(0, 0, 0, 1).a:NaN"
+
+http://demos.dojotoolkit.org/demos/spiderChart/demo.html
+"[NaN iid: 60045] rgba(211, 211, 211, 1).a:NaN" analysis.js:2191
+19:49:41.795 "[NaN iid: 60045] rgba(192, 192, 192, 1).a:NaN" analysis.js:2191
+19:49:41.990 "[NaN iid: 60045] rgba(128, 0, 128, 1).a:NaN" analysis.js:2191
+19:49:42.150 "[NaN iid: 60045] rgba(255, 165, 0, 1).a:NaN" analysis.js:2191
+19:49:42.285 "[NaN iid: 60045] rgba(255, 255, 0, 1).a:NaN" analysis.js:2191
+19:49:42.418 "[NaN iid: 60045] rgba(0, 128, 0, 1).a:NaN" analysis.js:2191
+19:49:42.559 "[NaN iid: 60045] rgba(255, 0, 0, 1).a:NaN" analysis.js:2191
+19:49:42.782 "[NaN iid: 60045] rgba(0, 0, 255, 1).a:NaN" analysis.js:2191
+19:49:42.976 "[NaN iid: 60045] rgba(255, 0, 0, 1).a:NaN" analysis.js:2191
+19:49:43.002 "[NaN iid: 60045] rgba(0, 128, 0, 1).a:NaN" analysis.js:2191
+19:49:43.028 "[NaN iid: 60045] rgba(255, 255, 0, 1).a:NaN" analysis.js:2191
+19:49:43.053 "[NaN iid: 60045] rgba(255, 165, 0, 1).a:NaN" analysis.js:2191
+19:49:43.081 "[NaN iid: 60045] rgba(128, 0, 128, 1).a:NaN"
+
+
+go.com
+"[NaN iid: 36789] [object Object].r:NaN" analysis.js:2191
+19:11:46.360 "[NaN iid: 38353] [object Object].Aa:NaN" analysis.js:2191
+19:11:46.360 "[NaN iid: 38357] [object Object].Ba:NaN" analysis.js:2191
+19:11:46.360 "[NaN iid: 38381] [object Object].Ga:NaN" analysis.js:2191
+19:11:46.375 "[NaN iid: 22409] [object Object].Ea:NaN" analysis.js:2191
+19:11:46.376 "[NaN iid: 22413] [object Object].Da:NaN" analysis.js:2191
+19:11:46.376 "[NaN iid: 22457] [object Object].r:NaN" analysis.js:2191
+19:11:46.378 "[NaN iid: 38673] [object Object].Da:NaN" analysis.js:2191
+19:11:46.379 "[NaN iid: 38689] [object Object].Ea:NaN" analysis.js:2191
+19:11:46.379 "[NaN iid: 38705] [object Object].r:NaN" analysis.js:2191
+19:11:48.256 "[NaN iid: 22409] [object Object].Ea:NaN" analysis.js:2191
+19:11:48.256 "[NaN iid: 22413] [object Object].Da:NaN" analysis.js:2191
+19:11:48.256 "[NaN iid: 22457] [object Object].r:NaN" analysis.js:2191
+19:11:48.258 "[NaN iid: 38673] [object Object].Da:NaN" analysis.js:2191
+19:11:48.258 "[NaN iid: 38689] [object Object].Ea:NaN" analysis.js:2191
+19:11:48.258 "[NaN iid: 38705] [object Object].r:NaN" analysis.js:2191
+
+
+http://dev.sencha.com/deploy/ext-4.0.0/examples/desktop/desktop.html
+"[NaN iid: 22189] [object Object].minimum:NaN" analysis.js:2191
+19:34:18.681 "[NaN iid: 22189] [object Object].maximum:NaN"
+
+
+http://demos.dojotoolkit.org/demos/mobileCharting/demo.html
+"[NaN iid: 60045] rgba(255, 255, 255, 1).a:NaN"
+
+
+analyzing the NaN bug on youtube.com
+
+when loading the www.youtube.com
+
+s.ytimg.com/yts/jsbin/www-pageframe-vflad41Qg.js
+
+for(var b in a)b in Ve||(this[b]=a[b]);this.Ca=a;(b=a.target||a.srcElement)&&3==b.nodeType&&(b=b.parentNode);this.target=b;if(b=a.relatedTarget)try{b=b.nodeName&&b}catch(c){b=null}else"mouseover"==this.type?b=a.fromElement:"mouseout"==this.type&&(b=a.toElement);this.relatedTarget=b;this.clientX=void 0!=a.clientX?a.clientX:a.pageX;this.clientY=void 0!=a.clientY?a.clientY:a.pageY;this.keyCode=a.keyCode?a.keyCode:a.which;this.charCode=a.charCode||("keypress"==this.type?
+this.keyCode:0);this.altKey=a.altKey;this.ctrlKey=a.ctrlKey;this.shiftKey=a.shiftKey;
+
+
+"MozMousePixelScroll"==this.type?
+	(this.wheelDeltaX=a.axis==a.HORIZONTAL_AXIS?a.detail:0,this.wheelDeltaY=a.axis==a.HORIZONTAL_AXIS?0:a.detail):
+	window.opera?
+		(this.wheelDeltaX=0,this.wheelDeltaY=a.detail):
+		0==a.wheelDelta%120?
+			"WebkitTransform"in document.documentElement.style? window.chrome&&0==navigator.platform.indexOf("Mac")?(this.wheelDeltaX=a.wheelDeltaX/-30,this.wheelDeltaY=a.wheelDeltaY/-30):(this.wheelDeltaX=
+a.wheelDeltaX/-1.2,this.wheelDeltaY=a.wheelDeltaY/-1.2):(this.wheelDeltaX=0,this.wheelDeltaY=a.wheelDelta/-1.6):
+(this.wheelDeltaX=a.wheelDeltaX/-3,this.wheelDeltaY=a.wheelDeltaY/-3)
+
+so finally this piece of code is executed:
+(this.wheelDeltaX=a.wheelDeltaX/-3,this.wheelDeltaY=a.wheelDeltaY/-3)
+
+analyzing this code we can find that a.wheelDeltaX and a.wheelDeltaY is undefined.
+
+to make sure the NaN is not induced by our framework, we open the same webpage without code transformation and use Debugger to watch the value reported to have NaN value.
+
+
+===============================
+
+
+No. of Polymorphic | No. uninit array elem | No. of putting non-numeric into numeric array | No. of using incontiguous array index | No. of statements init objets in non-constructor
+google.com 44 | 18 | 0 | 3 | 0
+facebook.com 117 121 2165(after login) | 23 | 0 | 3 | 0
+youtube.com 47 | 1 | 0 | 1 | 0
+yahoo.com 66 | 0 | 0 | 1 | 0
+baidu.com 50 | 15 | 0 | 0 | 0
+wikipedia.org 4 | 0 | 0 | 0 | 0
+qq.com 125 | 3 | 0 | 0 | 0
+taobao.com 863 | 2849 | 0 | 0 | 0
+live.com 73 | 25 | 0 | 21 | 0
+linkedin.com 49 | 66 | 11 | 3 | 0
