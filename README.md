@@ -54,5 +54,6 @@ Then go to the Jalangi_FF directory and type the following command to start runn
     cfx run
 
 For more information related to this extension, please contact:
-Liang Gong (gongliang13@eecs.berkeley.edu)
-Koushik Sen (ksen@cs.berkeley.edu)
+
+Liang Gong (gongliang13 (at) eecs.berkeley.edu)
+Koushik Sen (ksen (at) cs.berkeley.edu)
