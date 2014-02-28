@@ -4,11 +4,12 @@ Jalangi
 
 Jalangi Firefox Extension is a framework for writing light-weight dynamic analyses for Front-end JavaScript. It allow you to do interesting dynamic analysis for any live webpage in your Firefox webbrowser.
 
+For more information, please check out our project website at:  
+http://www.eecs.berkeley.edu/~gongliang13/jalangi_ff/ 
+
 Jalangi Firefox extension intercepts and transforms every piece of JavaScript code in the webpage and external files. The code transformation adds hooks that allows you to monitor almost every operation (e.g., variable read/write, unary/binary operation, function/method call, etc.) performed by the execution. Simply overriding the API exposed allows you to perform your own dynamic analysis. Your dynamic analysis code will be executed side-by-side with the target program's execution.
 
 JavaScript is a loosely typed language which is often error-prune. Based on this framework, you can quickly build a analysis module to check different kinds of correctness bugs and performance bugs, doing various program analysis (e.g., debugging, Performance analysis, Monitoring dynamic behaviours, Record and replay, runtime call graph etc.)
-
-Please check out our project website at http://www.eecs.berkeley.edu/~gongliang13/jalangi_ff/ for more information. 
 
 ### Jalangi in a Nutshell
 
