@@ -33,7 +33,7 @@ If you have a fresh installation of Ubuntu, you can install all the requirements
     sudo apt-get install git
     sudo apt-get install firefox
 
-### If you just want to install the packaged Firefox extension, go to our project website (http://www.eecs.berkeley.edu/~gongliang13/jalangi_ff/), click "Download" and drag and drop the XPI package into your Firefox web browser and have fun!! :)
+If you just want to install the packaged Firefox extension, go to our project website (http://www.eecs.berkeley.edu/~gongliang13/jalangi_ff/), click "Download" and drag and drop the XPI package into your Firefox web browser and have fun!! :)
 
 ### Configurating Development Environment:
 Install the Firefox add-on sdk, for more information check out:
