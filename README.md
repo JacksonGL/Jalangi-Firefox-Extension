@@ -36,8 +36,7 @@ If you have a fresh installation of Ubuntu, you can install all the requirements
 
 If you just want to install the packaged Firefox extension, go to our project website (http://www.eecs.berkeley.edu/~gongliang13/jalangi_ff/), click "Download" and drag and drop the XPI package into your Firefox web browser and have fun!! :)
 
-### Configurating Development Environment:
-Install the Firefox add-on sdk, for more information check out:
+Next step is to install the Firefox add-on sdk, for more information check out:
 https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation
 
 after installing the Firefox addon sdk, first activate the sdk:
