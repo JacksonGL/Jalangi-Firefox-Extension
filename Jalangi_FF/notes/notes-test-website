@@ -1,6 +1,0 @@
- 
-notes for building websites
-
-
-sudo rm -r /var/lib/tomcat7/webapps/jit-tests
-sudo cp -r /home/jacksongl/JacksonGL_Ubuntu_Workspace/Codebase/Jalangi_FF_extension/Firefox\ Extension/Firefox_Addon_SDK/addon-sdk-1.14/Jalangi_FF/lib/webtests/jit-tests /var/lib/tomcat7/webapps/
